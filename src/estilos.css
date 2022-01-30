@@ -1,0 +1,114 @@
+body {
+	background: #b7b7b7;
+	margin: 0;
+}
+
+#cabeza {
+	background: #b7b7b7;
+	padding: 5px;
+	max-height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#cabeza #hder {
+	display: flex;
+	align-items: center;
+}
+
+#cabeza #hder h1 {
+	margin: 0 10px;
+}
+
+#cabeza #hizq ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#cabeza #hizq ul li {
+	margin: 0 10px;
+	font-size: 30px;
+}
+
+.grid-1 {
+	background: #fff;
+	display: grid;
+	grid-template-columns: 1fr 8fr;
+	grid-template-rows: auto;
+	grid-gap: 1	px;
+	border: 2px solid #000;
+}
+
+.item-1, .item-2 {
+	margin: 2px;
+	border: 3px double #000;
+}
+
+.grid-1 .item-1 {
+	grid-column: 1/2;
+}
+
+.grid-1 .item-2 {
+	grid-column: 2/3;
+	padding: 2px 5px;
+}
+
+.dias {
+	border-bottom: 1px solid #000;
+}
+
+.dias ul {
+	display: flex;
+	margin: 0;
+	padding: 2px 5px;
+	list-style: none;
+}
+
+.dias li {
+	margin: 0px 7px;
+}
+
+/*.principal {
+	padding: 2px 5px;
+}*/
+
+.principal .mod, .participante {
+	border: 1px solid #000;
+	margin: 2px 0;
+    padding: 5px;
+}
+
+.principal .mod {
+    background: cornsilk;
+}
+
+.principal .participante {
+    background-color: darkgray;
+    margin-left: 20px;
+}
+
+.principal header {
+	display: flex;
+    align-items: center;
+}
+
+.principal header .contImg {
+	margin-right: 5px;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+
+.principal header hgroup {
+    margin-right: 5px;
+}
+
+.principal header hgroup h1, h5, h6 {
+	margin: 0;
+}
+
+#pie {
+	text-align: center;
+}
