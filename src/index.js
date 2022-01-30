@@ -4,7 +4,16 @@ import ReactDom from 'react-dom';
 import './estilos.css';
 import yaml from './datos.yaml';
 
-console.log(yaml);
+if ('serviceWorker' in navigator){
+    window.addEventListener('load', ()=>{
+        navigator.serviceWorker.register('./service-worker.js').then(registration => {
+            console.log('SW a sido registrado ', registration);
+        }).catch(err=>{
+            console.log('SW no registrado ', err)
+        })
+    })
+}
+
 const encabezado = <a href="index.php"><img src={require('./slogo.png')} /></a>;
 
 ReactDom.render(
